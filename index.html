@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Gallery | Photo Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">pixel<span>.</span>gallery</a>
+
+        <div class="header-content">
+            <p class="eyebrow">YOUR VISUAL COLLECTION</p>
+            <h1>Explore the world<br>through <span>photography.</span></h1>
+            <p class="subtitle">
+                A collection of moments, places and stories worth exploring.
+            </p>
+        </div>
+
+        <div class="library-stats">
+            <span id="photo-count">18 photographs</span>
+            <span class="status-dot"></span>
+            <span>Curated collection</span>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <section class="gallery-toolbar">
+            <div class="toolbar-heading">
+                <h2>Discover</h2>
+                <p>Find something worth looking at.</p>
+            </div>
+
+            <div class="toolbar-controls">
+                <div class="search-box">
+                    <span aria-hidden="true">⌕</span>
+                    <input type="search" id="search-input" placeholder="Search photographs..."
+                        aria-label="Search photographs">
+                </div>
+
+                <select id="sort-select" aria-label="Sort photographs">
+                    <option value="default">Default order</option>
+                    <option value="az">Title: A to Z</option>
+                    <option value="za">Title: Z to A</option>
+                </select>
+            </div>
+        </section>
+
+        <nav class="gallery-filters" aria-label="Photo categories">
+            <button class="filter-btn active" data-category="all" aria-pressed="true">All photos</button>
+            <button class="filter-btn" data-category="nature" aria-pressed="false">Nature</button>
+            <button class="filter-btn" data-category="cities" aria-pressed="false">Cities</button>
+            <button class="filter-btn" data-category="animals" aria-pressed="false">Animals</button>
+        </nav>
+
+        <section class="gallery" id="gallery" aria-label="Photo collection">
+            <article class="gallery-item" data-category="nature" data-title="Mountain Escape">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800"
+                    alt="Mountain lake surrounded by green hills" loading="lazy">
+                <div class="image-info"><span>01 / NATURE</span>
+                    <h3>Mountain Escape</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="cities" data-title="City Lights">
+                <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800"
+                    alt="City skyline illuminated at night" loading="lazy">
+                <div class="image-info"><span>02 / CITIES</span>
+                    <h3>City Lights</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="animals" data-title="Wild Beauty">
+                <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=800"
+                    alt="Fox in its natural environment" loading="lazy">
+                <div class="image-info"><span>03 / ANIMALS</span>
+                    <h3>Wild Beauty</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="nature" data-title="Into the Forest">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+                    alt="Sunlight passing through a forest" loading="lazy">
+                <div class="image-info"><span>04 / NATURE</span>
+                    <h3>Into the Forest</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="cities" data-title="Urban Stories">
+                <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=800"
+                    alt="Tall buildings in a modern city" loading="lazy">
+                <div class="image-info"><span>05 / CITIES</span>
+                    <h3>Urban Stories</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="animals" data-title="King of the Wild">
+                <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=800"
+                    alt="Lion resting in the wild" loading="lazy">
+                <div class="image-info"><span>06 / ANIMALS</span>
+                    <h3>King of the Wild</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="nature" data-title="Ocean Dreams">
+                <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800"
+                    alt="Ocean waves rolling toward the shore" loading="lazy">
+                <div class="image-info"><span>07 / NATURE</span>
+                    <h3>Ocean Dreams</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="cities" data-title="Golden Streets">
+                <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=800"
+                    alt="City buildings beneath a colorful evening sky" loading="lazy">
+                <div class="image-info"><span>08 / CITIES</span>
+                    <h3>Golden Streets</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="animals" data-title="Gentle Giants">
+                <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=800"
+                    alt="Elephant in a natural habitat" loading="lazy">
+                <div class="image-info"><span>09 / ANIMALS</span>
+                    <h3>Gentle Giants</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="nature" data-title="Mountain Morning">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+                    alt="Mountain peaks reaching into the sky" loading="lazy">
+                <div class="image-info"><span>10 / NATURE</span>
+                    <h3>Mountain Morning</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="cities" data-title="Modern Lines">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800"
+                    alt="Modern skyscrapers viewed from below" loading="lazy">
+                <div class="image-info"><span>11 / CITIES</span>
+                    <h3>Modern Lines</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="animals" data-title="Into the Wild">
+                <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=800" alt="Woodland scenery"
+                    loading="lazy">
+                <div class="image-info"><span>12 / ANIMALS</span>
+                    <h3>Into the Wild</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="nature" data-title="Desert Silence">
+                <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800"
+                    alt="Golden sand dunes stretching across a desert" loading="lazy">
+                <div class="image-info"><span>13 / NATURE</span>
+                    <h3>Desert Silence</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="cities" data-title="City from Above">
+                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800"
+                    alt="City buildings viewed from above" loading="lazy">
+                <div class="image-info"><span>14 / CITIES</span>
+                    <h3>City from Above</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="animals" data-title="Feathered Friend">
+                <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?w=800"
+                    alt="Bird perched on a branch" loading="lazy">
+                <div class="image-info"><span>15 / ANIMALS</span>
+                    <h3>Feathered Friend</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="nature" data-title="Autumn Path">
+                <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800"
+                    alt="Path winding through a forest" loading="lazy">
+                <div class="image-info"><span>16 / NATURE</span>
+                    <h3>Autumn Path</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="cities" data-title="Night Crossing">
+                <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=800"
+                    alt="City skyline at twilight" loading="lazy">
+                <div class="image-info"><span>17 / CITIES</span>
+                    <h3>Night Crossing</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="animals" data-title="Ocean Wanderer">
+                <img src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?w=800"
+                    alt="Whale swimming in the ocean" loading="lazy">
+                <div class="image-info"><span>18 / ANIMALS</span>
+                    <h3>Ocean Wanderer</h3>
+                </div>
+            </article>
+        </section>
+
+        <p class="empty-message" id="empty-message" hidden>
+            No photographs found. Try another search.
+        </p>
+    </main>
+
+    <dialog class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous photograph">&#8592;</button>
+
+        <figure>
+            <img id="lightbox-image" src="" alt="">
+            <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+
+        <button class="lightbox-next" id="lightbox-next" aria-label="Next photograph">&#8594;</button>
+    </dialog>
+
+    <footer class="footer">
+        <p>PIXEL.GALLERY</p>
+        <p>A little corner of the visual world.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
